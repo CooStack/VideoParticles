@@ -1,0 +1,6 @@
+{
+  "parent": "item/pink_wand",
+  "textures": {
+    "layer0": "item/pink_wand"
+  }
+}

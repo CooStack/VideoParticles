@@ -1,0 +1,51 @@
+{
+	"schemaVersion": 1,
+	"id": "videoparticles",
+	"version": "${version}",
+	"name": "VideoParticles",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"CooStack"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/videoparticles/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "cn.coostack.video.VideoParticles",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "cn.coostack.video.VideoParticlesDataGenerator",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "cn.coostack.video.VideoParticlesClient",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"videoparticles.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*",
+		"cooparticlesapi": ">=1.5"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
